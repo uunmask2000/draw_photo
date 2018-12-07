@@ -125,4 +125,21 @@ function wirte_x_y( x , y )
 }
 
 
+/**
+* save
+*
+* id = 畫布ID
+*
+* @return void
+*/
+function saveCanvas(id)
+{
+	//将canvas内容保存为文件并下载
+	// var canvas = document.getElementById("draw");	
+	var canvas = document.getElementById(id);
+	var dataURL = canvas.toDataURL("image/png");
+
+}
+
+
 
