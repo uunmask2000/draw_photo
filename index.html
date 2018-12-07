@@ -1,0 +1,36 @@
+
+<head>
+  <!--
+  <base href="" target="_blank">
+  -->
+</head>
+<span id='x'></span>
+<span id='y'></span>
+<div class='body'>
+<div>
+ <button onclick="clearCanvas('draw')">Click me</button>     
+</div>
+<div>
+<canvas id="draw" class='div1'></canvas>
+</div>
+
+<style>
+.body{
+max-width:600px; 
+myimg:expression(onload=function(){ 
+this.style.width=(this.offsetWidth > 600)?"600px":"auto"}); 
+}
+  .div1{
+    border-color:#aaaaee;
+    border-width:3px;
+    border-style:solid;
+    padding:5px;  
+  }  
+</style>  
+<script  src="https://code.jquery.com/jquery-3.3.1.js"  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="  crossorigin="anonymous"></script>
+<script type="text/javascript" src="/js/draw.js"></script>
+<script>
+var MAX_canvas_width = window.innerWidth;
+var MAX_canvas_height = window.innerHeight;
+canvas_init('draw' , true);
+</script>
